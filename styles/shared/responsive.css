@@ -1,0 +1,36 @@
+@media (max-width: 620px){
+    body {
+        padding:3em 2em ;
+    }
+    #nav {
+        pointer-events: none;
+        scale: 0;
+        transform-origin: top left;
+        transition: all 0.3s ease;
+    }
+    header {
+        left: 0;
+    }
+    .show-nav-container{
+        display: block;
+        pointer-events: auto;
+    }
+    #nav.show-nav {
+        pointer-events: auto;
+        scale: 1;
+        width: 250px;
+        transition: all 300ms ease;
+    }
+    #nav.show-nav .toggle-container{
+        opacity: 0;
+        pointer-events: none;
+    }
+    #nav.show-nav .link-description{
+        pointer-events: auto;
+        opacity:1;
+    }
+    #nav.show-nav footer {
+        display: flex;
+        opacity: 1;
+    }
+}

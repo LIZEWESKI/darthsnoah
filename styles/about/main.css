@@ -1,0 +1,12 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-container a {
+    text-decoration: underline;
+}
+.about-container p {
+    padding: 0.5em;
+}

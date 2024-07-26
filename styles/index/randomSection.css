@@ -1,0 +1,33 @@
+#randomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#randomSection .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* min-width: 400px; */
+    border-radius: 5px;
+    background-color: var(--color-light);
+    margin-bottom: 15px;
+    /* padding-bottom: 10px; */
+}
+#randomSection .wrapper .img-container {
+    width: 100%;
+}
+#randomSection .wrapper .img-container img {
+    border-radius: 5px 5px 0 0 ;
+}
+#randomSection .wrapper .character-info {
+    padding: 0.5em;
+    text-align: start;
+}
+#randomSection .wrapper .add-favorite-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

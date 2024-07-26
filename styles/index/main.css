@@ -1,0 +1,86 @@
+#charactersListing {
+    margin: 2em 0;
+}
+#charactersListing .characters-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,min(250px));
+    gap: 0.5em;
+    margin: 2em 0 2em 0;
+}
+
+.characters-grid .character-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-light);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    gap: 0.3em;
+    transition: border-color 300ms ease;
+}
+.characters-grid .character-card:hover {
+    border-color: var(--color-primary);
+}
+.characters-grid .character-image-container {
+    width: 100%;
+}
+
+.characters-grid .character-image-container img {
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.character-card .character-info { 
+    padding: 0.3em; 
+    text-align: start; 
+}
+.characters-grid .character-info div {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2em;
+}
+.character-card .add-favorite-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#charactersCountContainer span {
+    color: var(--color-warning) ;
+}
+
+.added-msg{
+    position: absolute;
+    top: -85%;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: 1px solid var(--color-dark);
+    border-radius: 3px;
+    padding: 0.2em;
+    pointer-events: none;
+    font-weight: 500;
+    display: none;
+}
+.added-msg.active{
+    display: block;
+}
+
+.error-message-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow: hidden;
+}
+.error-message-container span {
+    color: var(--color-danger);
+    font-style: italic;
+    white-space: wrap;
+}
+  
+

@@ -12,6 +12,10 @@
     background: var(--color-light);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* Safari */
+    -moz-backdrop-filter: blur(4px); /* Firefox */
+    -o-backdrop-filter: blur(4px); /* Opera */
+    -ms-backdrop-filter: blur(4px); /* Internet Explorer */
     border: 1px solid rgba(0, 0, 0, 0.15);
     transition: width 0.3s ease;
 }
